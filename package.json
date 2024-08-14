@@ -1,0 +1,25 @@
+{
+  "name": "animethemes-batch-encoder",
+  "version": "1.0.0",
+  "description": "Generate/Execute FFmpeg commands for files in acting directory",
+  "main": "src/index.ts",
+  "bin": {
+    "batch_encoder": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc && npm install -g .",
+    "start": "ts-node src/index.ts -h"
+  },
+  "author": "AnimeThemes",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "prompts": "^2.4.2"
+  }
+}
