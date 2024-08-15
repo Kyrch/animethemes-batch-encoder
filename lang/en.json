@@ -1,0 +1,9 @@
+{
+    "choose_mode": "Choose the mode",
+    "modes": {
+        "1": "Generate commands",
+        "2": "Execute commands",
+        "3": "Generate and execute commands"
+    },
+    "source_files": "Choose source files"
+}

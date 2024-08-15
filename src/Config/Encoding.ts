@@ -52,13 +52,7 @@ class EncodingConfig {
         public defaultAudioStream,
     ) {}
 
-    public fromConfig(config) {
-        let allowedFiletypes = config['Encoding']
-
-        
-    }
-
-    public getDefaultStream(streamType: string) {
+    getDefaultStream(streamType: string): string|null {
         switch (streamType) {
             case 'video':
                 return this.defaultVideoStream;

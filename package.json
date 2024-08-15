@@ -7,14 +7,15 @@
     "batch_encoder": "./bin/index.js"
   },
   "scripts": {
-    "build": "tsc && npm install -g .",
-    "start": "ts-node src/index.ts -h"
+    "build": "tsc --noEmit && esbuild src/index.ts --bundle --platform=node --packages=external --outdir=bin && npm install -g .",
+    "start": "tsx src/index.ts -h"
   },
   "author": "AnimeThemes",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.1.0",
-    "ts-node": "^10.9.2",
+    "@types/node": "^22.3.0",
+    "@types/prompts": "^2.4.9",
+    "esbuild": "^0.23.0",
     "tsx": "^4.16.5",
     "typescript": "^5.5.4"
   },
